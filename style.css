@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Configuración general */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo neutro para un aspecto moderno */
+}
+
+.container {
+    margin-top: 20px;
+    padding: 0 15px; /* Asegurarse de tener un poco de margen interno */
+}
+/* Centrar el logo y ajustar margen */
+.logo {
+    display: block; /* Asegurarse de que se trate como un bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width:600px; /* Limitar el ancho del logo para mantenerlo proporcional */
+    padding: 10px; /* Agregar espacio interno para separar del contenido */
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%; /* Asegurarse de que la tabla ocupe todo el ancho del contenedor */
+    border-collapse: collapse; /* Quitar espacios entre celdas */
+}
+
+table th,
+table td {
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centrar texto */
+}
+
+table thead {
+    background-color: #343a40; /* Fondo oscuro para cabeceras */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Alternar fondo para filas */
+}
+
+/* Estilos para botones */
+.btn {
+    margin: 10px 5px; /* Reducir margen para hacer más compacto */
+    padding: 10px 20px; /* Aumentar espacio interno para mejor interacción */
+    border: none; /* Sin borde para un diseño limpio */
+    border-radius: 5px; /* Bordes redondeados para suavizar */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color primario para botones principales */
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #28a745; /* Color verde para éxito */
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color secundario para botones secundarios */
+    color: #ffffff;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px; /* Reducir margen en dispositivos pequeños */
+    }
+
+    table {
+        font-size: 12px; /* Reducir tamaño de texto para pantallas más pequeñas */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Ajustar tamaño del botón */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para dispositivos aún más pequeños como teléfonos */
+    table {
+        display: block; /* Hacer la tabla vertical en pantallas pequeñas */
+        overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    }
+}
